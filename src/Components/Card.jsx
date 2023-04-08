@@ -1,6 +1,7 @@
 import React from "react";
 import doctorImg from '../images/doctor.jpg'
 import { useNavigate } from 'react-router-dom';
+import Details from '../Routes/Details'
 
 const Card = ({data}) => {
 
@@ -20,7 +21,7 @@ const Card = ({data}) => {
   
   return (
     <div className="card"
-      onClick={() => navigate(`/dentist/${id}`)}
+      onClick={() => navigate(`/users/${id}`)}
     >
       {/* En cada card deberan mostrar en name - username y el id */}
       {/* No debes olvidar que la Card a su vez servira como Link hacia la pagina de detalle */}
@@ -39,11 +40,10 @@ const Card = ({data}) => {
         </p>
       </div>
 
-
       {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
       <button 
       onClick={addFav} 
-      className="favButton">Agregar favorito</button>
+      className="favButton">Agregar favorito</button>            
     </div>
   );
 };

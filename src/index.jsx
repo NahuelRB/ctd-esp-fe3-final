@@ -12,7 +12,7 @@ import Details from './Routes/Details'
 import Contact from './Routes/Contact'
 import Error from './Routes/Error'
 import Odontologo from './Routes/Odontologo';
-
+import {AppRoutes} from './Components/utils/AppRoutes';
 
 
 const router = createBrowserRouter([
@@ -20,36 +20,7 @@ const router = createBrowserRouter([
     path: "/*",
     element: <App/>,
     errorElement: <Error/>,
-    children: [
-      {
-        index:true,
-        element:(
-          <Navigate to="home"
-          replace={true}
-          />
-        )
-      },
-      {
-        path: "/home",
-        element: <Home />
-      },
-      {
-        path: "/odontologo/:id",
-        element: <Odontologo/>
-      },
-      {
-        path: '/favs',
-        element: <Favs/>
-      },
-      {
-        path: "/details",
-        element: <Details/>
-      },
-      {
-        path:"/contact",
-        element: <Contact/>
-      },
-    ]
+    children: AppRoutes,
   },
 ]);
 
