@@ -1,8 +1,6 @@
 import React from "react";
 import doctorImg from '../images/doctor.jpg'
 import { useNavigate } from 'react-router-dom';
-import Details from '../Routes/Details'
-import { useState } from 'react'
 
 const Card = ({data}) => {
   const {name, username,id} = data || ''
@@ -13,9 +11,7 @@ const Card = ({data}) => {
   }
 
   const navigate = useNavigate();
-  
-  //const themeClass = isModoOscuro ? 'dark' : 'light';
-  
+    
   return (
     <div className="card"
       onClick={() => navigate(`/users/${id}`)}

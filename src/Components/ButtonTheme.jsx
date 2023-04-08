@@ -1,7 +1,7 @@
 import React from 'react';
-import { useAppContext } from '../Components/utils/useAppContext';
+import { useAppContext } from './utils/useAppContext';
 
-export const ButtonTema = () => {
+export const ButtonTheme = () => {
   const {
     changeTheme,
     state: {temaFondo},
@@ -9,9 +9,11 @@ export const ButtonTema = () => {
 
   return (
     <button
+      style={{ width: '100px', height: '40px' }}
       className="menu_tema"
       onClick={changeTheme}
     >
+      Change Theme
     </button>
   );
 };
