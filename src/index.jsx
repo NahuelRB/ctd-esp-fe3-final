@@ -6,12 +6,7 @@ import App from './App';
 import { ContextProvider } from './Components/utils/global.context';
 
 //Pages
-import Home from './Routes/Home'
-import Favs from './Routes/Favs'
-import Details from './Routes/Details'
-import Contact from './Routes/Contact'
 import Error from './Routes/Error'
-import Odontologo from './Routes/Odontologo';
 import {AppRoutes} from './Components/utils/AppRoutes';
 
 

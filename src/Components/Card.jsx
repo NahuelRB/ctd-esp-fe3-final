@@ -2,13 +2,10 @@ import React from "react";
 import doctorImg from '../images/doctor.jpg'
 import { useNavigate } from 'react-router-dom';
 import Details from '../Routes/Details'
+import { useState } from 'react'
 
 const Card = ({data}) => {
-
   const {name, username,id} = data || ''
-  /*const {
-    state: {isModoOscuro}
-  }*/
 
   const addFav = e => {
     // Aqui iria la logica para agregar la Card en el localStorage
@@ -43,7 +40,7 @@ const Card = ({data}) => {
       {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
       <button 
       onClick={addFav} 
-      className="favButton">Agregar favorito</button>            
+      className="favButton">Agregar favorito</button>                  
     </div>
   );
 };

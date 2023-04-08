@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -164,4 +170,9 @@ tr:nth-child(even) {
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+.menu_tema {
+  border: none;
+  background-color: red;
 }

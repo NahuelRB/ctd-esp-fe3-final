@@ -2,8 +2,8 @@ import { createContext,useReducer, useMemo } from "react";
 import { globalReducer } from './globalReducer';
 
 export const initialState = {
-  theme: "",
-  data: []}
+  temaFondo: false,
+  data: []|| []};
 
 export const ContextGlobal = createContext(initialState);
 
@@ -13,7 +13,7 @@ export const ContextProvider = ({ children }) => {
   const value = useMemo(() => [state, dispatch], [state]);
 
   return (
-    <ContextGlobal.Provider value={{value}}>
+    <ContextGlobal.Provider value={value}>
       {children}
     </ContextGlobal.Provider>
   );

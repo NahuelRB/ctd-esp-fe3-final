@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import Card from '../Components/Card'
-import axios from 'axios'
 
 const baseurl = `https://jsonplaceholder.typicode.com/users/`
 
@@ -16,7 +15,6 @@ export const Home = () => {
 
     try {      
       setLoading(true)
-      console.log(baseurl);
       const respuesta = await fetch(baseurl);
       const userToJson = await respuesta.json();
       setUser(userToJson)
@@ -52,7 +50,6 @@ export const Home = () => {
             )}
         </ul>  
       }
-
       </div>
     </main>
   )

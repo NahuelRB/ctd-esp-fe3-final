@@ -1,9 +1,9 @@
-export const globalReducer = (state, action) => {
+/*export const globalReducer = (state, action) => {
   switch (action.type) {
     case 'CAMBIAR_TEMA': {
       return {
         ...state,
-        isDarkMode: !state.isDarkMode,
+        temaFondo: !state.temaFondo,
       };
     }
 
@@ -11,4 +11,4 @@ export const globalReducer = (state, action) => {
       throw new Error(`La accion de tipo ${action.type} no existe.`);
     }
   }
-};
+};*/
