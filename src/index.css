@@ -174,5 +174,5 @@ tr:nth-child(even) {
 
 .menu_tema {
   border: none;
-  background-color: red;
+  border-color: black;
 }
