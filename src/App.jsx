@@ -1,13 +1,14 @@
-
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
+import {Outlet,Link} from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 
-
-function App() {
+export const App = () => {
   return (
-      <div className="App">
-          <Navbar/>
-          <Footer/>
+      <div className="App">       
+        <Navbar/>
+        <Outlet/>        
+        <Footer/>  
       </div>
   );
 }

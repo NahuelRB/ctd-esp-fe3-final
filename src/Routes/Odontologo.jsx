@@ -7,7 +7,7 @@ const baseurl = `https://jsonplaceholder.typicode.com/users/`
 
 //Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
-export const Home = () => {
+export const Odontologo = (id) => {
 
   const [user, setUser] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -16,6 +16,7 @@ export const Home = () => {
 
     try {      
       setLoading(true)
+      baseurl =+ {id} 
       console.log(baseurl);
       const respuesta = await fetch(baseurl);
       const userToJson = await respuesta.json();
@@ -41,21 +42,11 @@ export const Home = () => {
       <h1>Home</h1>
       <div className='card-grid'>
       
-        {loading ?
-        <p>Cargando datos...</p>
-        : <ul>
-          {user.map(item => 
-            <Card
-              data={item}
-              key={item.id}
-            />
-            )}
-        </ul>  
-      }
+            <h1>Odontologo seleccionado</h1>
 
       </div>
     </main>
   )
 }
 
-export default Home
+export default Odontologo

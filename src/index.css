@@ -120,3 +120,48 @@ tr:nth-child(even) {
 .dark > a {
   color: white;
 }
+
+.card {
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 330px;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  width: 220px;
+}
+
+.card-imagen {
+  border-radius: 10px 10px;
+  height: 200px;
+  width: 180px;
+}
+
+/* Theme */
+
+.dark {
+  background-color: var(--very-dark-gray);
+  color: white;
+}
+.dark > a {
+  color: white;
+}
+
+.light {
+  background-color: var(--light-gray);
+}
+
+.mainDark {
+  background-color: var(--dark-gray);
+  color: white;
+}
+
+.mainLight {
+  background-color: var(--very-light-gray);
+}
+
+.component-form{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
